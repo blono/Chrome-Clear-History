@@ -6,6 +6,8 @@
   </head>
   <body>
     <label for="days">Number of days to keep history.<br>If 0 is specified, the history will be deleted every time when Chrome starts up.<br>Enter key to save.</label><br>
-    <input type="number" id="days" name="days">
+    <input type="number" id="days" name="days" min="0"><br><br>
+    <label for="search">Substring matching the URL of the history to be deleted.<br>Enter comma-separated strings.<br>Enter key to save.</label><br>
+    <input type="text" id="search" name="search" style="width: 50em;">
   </body>
 </html>
